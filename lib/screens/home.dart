@@ -12,8 +12,9 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(30, 60, 0, 0), // Padding for the top space
+        padding: const EdgeInsets.fromLTRB(30, 80, 0, 0), // Padding for the top space
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start, // Aligns items to the start
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -34,7 +35,7 @@ class _HomeState extends State<Home> {
               ],
             ),
             // Wide gap between the text and image
-            const SizedBox(width: 180), // Increased space between text and image
+            const SizedBox(width: 235), // Increased space between text and image
             // Image aligned to the right of the text column
              ClipOval(
               child: Image.asset(

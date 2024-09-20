@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Schedule extends StatefulWidget {
-  const Schedule({super.key});
+class Profile extends StatefulWidget {
+  const Profile({super.key});
 
   @override
-  State<Schedule> createState() => _ScheduleState();
+  State<Profile> createState() => _ProfileState();
 }
 
-class _ScheduleState extends State<Schedule> {
+class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
