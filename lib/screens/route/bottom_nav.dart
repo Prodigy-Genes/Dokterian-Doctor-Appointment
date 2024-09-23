@@ -25,9 +25,9 @@ class _BottomNavState extends State<BottomNav> {
   // List of screens
   final List<Widget> _screens = const [
     Home(name: 'James'), // Home screen
-    Schedule(),          // Schedule screen (to be created)
-    Message(),           // Messages screen
-    Profile(),           // Profile screen
+    Schedule(), // Schedule screen (to be created)
+    Message(), // Messages screen
+    Profile(), // Profile screen
   ];
 
   @override
@@ -39,13 +39,13 @@ class _BottomNavState extends State<BottomNav> {
         children: _screens,
       ),
       bottomNavigationBar: Container(
-        padding: const EdgeInsets.symmetric(vertical: 36, horizontal: 8),
+        padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 8),
         decoration: const BoxDecoration(
           color: Colors.white,
           border: Border(
             top: BorderSide(
               width: 1,
-              color: Color.fromARGB(255, 208, 209, 210),
+              color: Color.fromARGB(31, 208, 209, 210),
             ),
           ),
         ),
@@ -62,11 +62,13 @@ class _BottomNavState extends State<BottomNav> {
               },
               child: AnimatedContainer(
                 duration: const Duration(milliseconds: 300),
-                padding: EdgeInsets.symmetric(horizontal: isActive ? 16 : 0),
+                padding: EdgeInsets.symmetric(
+                    vertical: isActive ? 18 : 0, horizontal: isActive ? 16 : 0),
                 decoration: BoxDecoration(
                   color: isActive
                       ? Colors.blue.withOpacity(0.1)
-                      : Colors.transparent, // Transparent blue overlay when active
+                      : Colors
+                          .transparent, // Transparent blue overlay when active
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Row(
@@ -76,7 +78,9 @@ class _BottomNavState extends State<BottomNav> {
                       _navItems[index]['icon']!,
                       width: 30,
                       height: 30,
-                      color: isActive ? Colors.blue : Colors.grey, // Change icon color when active
+                      color: isActive
+                          ? Colors.blue
+                          : Colors.grey, // Change icon color when active
                     ),
                     const SizedBox(width: 8),
                     // Show text when active
@@ -84,9 +88,9 @@ class _BottomNavState extends State<BottomNav> {
                       Text(
                         _navItems[index]['label']!,
                         style: const TextStyle(
-                          color: Colors.blue, // Change text color to blue when active
-                          fontWeight: FontWeight.bold,
-                        ),
+                            color: Colors
+                                .blue, // Change text color to blue when active
+                            fontSize: 18),
                       ),
                   ],
                 ),
