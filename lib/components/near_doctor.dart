@@ -112,7 +112,7 @@ class NearDoctor extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                width: 10,
+                width: 30,
               ),
               Row(
                 children: [
