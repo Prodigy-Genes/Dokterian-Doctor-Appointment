@@ -1,16 +1,33 @@
-# doctor_appointment
+# Doctor Appointment App
 
-A new Flutter project.
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
 
-## Getting Started
+## Overview
+Doctor Appointment is a Flutter application that helps users schedule and manage their doctor appointments seamlessly. Users can view upcoming schedules, cancel appointments, and access completed schedules. 
 
-This project is a starting point for a Flutter application.
+## Features Will Include
+- User authentication with Google Sign-In
+- Schedule upcoming appointments
+- View canceled and completed schedules
+- User-friendly interface with responsive design
+- Notifications for upcoming appointments
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
+![Screenshot 1](assets/screenshots/Home.png)
+*This is UI of the Home Screen*
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Screenshot 2](assets/screenshots/Schedule.png)
+*This is the UI of the Schedule Screen*
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Installation
+To run this project, clone the repository and follow the instructions below:
+
+```bash
+git clone https://github.com/Prodigy-Genes/Dokterian-Doctor-Appointment.git
+cd doctor_appointment
+flutter pub get
